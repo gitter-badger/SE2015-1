@@ -2,7 +2,7 @@
 Software Engineering 2015 
 
 Member:
-- Nguyễn Hữu Thức(captain): 13020432
+- Nguyễn Hữu Thức(captain): MSV 13020432 	Skype thuckechsu02 
 - Thái Đính Phúc
 - Lê Trường Giang
 - Nguyễn Thành Trung

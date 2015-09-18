@@ -1,5 +1,5 @@
 # SE2015
-Software Enginearing 2015 
+Software Engineering 2015 
 
 Member:
 - Nguyễn Hữu Thức(captain): 13020432

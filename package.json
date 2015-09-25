@@ -9,8 +9,7 @@
   "dependencies": {
     "ejs": "2.3.3",
     "express": "4.13.3",
-	"socket.io": "~0.9.6",
-	"node-static"
+	"socket.io": "~0.9.6"
   },
   "engines": {
     "node": "4.1.1"

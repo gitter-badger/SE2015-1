@@ -1,8 +1,21 @@
 # SE2015
 Software Engineering 2015 
 
-Homepage: https://cloudpainting.herokuapp.com/
+Homepage for deploy: https://cloudpainting.herokuapp.com/
 
+==================================================================================
+*Tóm tắt buổi họp ngày 25/9/2015: 
+- Tất cả pull source code này về, checkout branch dev
+- Prototype mở đầu, credit by Giang: http://imgur.com/a/nLE4D
+- Chức năng chính của client đó là: tạo room, vào room, truyền tin.
+- Chức năng chính của server là: truyền tin, lưu ảnh, quản lý room.
+- Khi code đã chắc chắn ok, push code lên branch master, đợi 1 phút để server sẽ tự động build code, 
+	Vào lại homepage https://cloudpainting.herokuapp.com/ để xem kết quả
+- Quản lý source code ta dùng SourceTree: https://www.sourcetreeapp.com/download/
+- Do code của cả phía client lẫn server đều dùng javascript nên tất cả ae đều cần đọc tài liệu về javascript. Thêm nữa là html5, css cho phía client. 
+
+
+===================================================================================
 Member:
 - Nguyễn Hữu Thức(captain): MSV 13020432 	Skype thuckechsu02 
 - Thái Đính Phúc
@@ -11,8 +24,6 @@ Member:
 - Bùi Văn Hoàng
 
 Khởi đầu cần thiết:
-- Github Desktop: https://desktop.github.com/
-	Công cụ để commit, tạo branch, gộp trên git, sử dụng trên PC rất thuận tiện.
 - Skype: http://www.skype.com/de/download-skype/skype-for-computer/
 	Liên lạc, trao đổi teamwork. Tạo nick và chỉnh sửa lại file này để biết nick skype của nhau
 - HTML5, CSS: http://www.w3schools.com/html/html5_intro.asp

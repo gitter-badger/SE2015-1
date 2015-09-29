@@ -20,7 +20,7 @@ Member:
 - Nguyễn Hữu Thức(captain): MSV 13020432 	Skype thuckechsu02 
 - Thái Đính Phúc
 - Lê Trường Giang
-- Nguyễn Thành Trung
+- Nguyễn Thành Trung (Skype: Nguyentrungpro95)
 - Bùi Văn Hoàng
 
 Khởi đầu cần thiết:

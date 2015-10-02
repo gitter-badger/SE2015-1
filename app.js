@@ -1,36 +1,58 @@
-// Including libraries
+/**
+ * app.js
+ *
+ * Use `app.js` to run your app without `sails lift`.
+ * To start the server, run: `node app.js`.
+ *
+ * This is handy in situations where the sails CLI is not relevant or useful.
+ *
+ * For example:
+ *   => `node app.js`
+ *   => `forever start app.js`
+ *   => `node debug app.js`
+ *   => `modulus deploy`
+ *   => `heroku scale`
+ *
+ *
+ * The same command-line arguments are supported, e.g.:
+ * `node app.js --silent --port=80 --prod`
+ */
 
-var app = require('http').createServer(handler),
-	io = require('socket.io').listen(app),
-	static = require('node-static'); // for serving files
+// Ensure we're in the project directory, so relative paths work as expected
+// no matter where we actually lift from.
+process.chdir(__dirname);
 
-// This will make all the files in the current folder
-// accessible from the web
-var fileServer = new static.Server('./');
-	
-// This is the port for our web server.
-// you will need to go to http://localhost:8080 to see it
-app.listen(8080);
+// Ensure a "sails" can be located:
+(function() {
+  var sails;
+  try {
+    sails = require('sails');
+  } catch (e) {
+    console.error('To run an app using `node app.js`, you usually need to have a version of `sails` installed in the same directory as your app.');
+    console.error('To do that, run `npm install sails`');
+    console.error('');
+    console.error('Alternatively, if you have sails installed globally (i.e. you did `npm install -g sails`), you can use `sails lift`.');
+    console.error('When you run `sails lift`, your app will still use a local `./node_modules/sails` dependency if it exists,');
+    console.error('but if it doesn\'t, the app will run with the global sails instead!');
+    return;
+  }
 
-// If the URL of the socket server is opened in a browser
-function handler (request, response) {
+  // Try to get `rc` dependency
+  var rc;
+  try {
+    rc = require('rc');
+  } catch (e0) {
+    try {
+      rc = require('sails/node_modules/rc');
+    } catch (e1) {
+      console.error('Could not find dependency: `rc`.');
+      console.error('Your `.sailsrc` file(s) will be ignored.');
+      console.error('To resolve this, run:');
+      console.error('npm install rc --save');
+      rc = function () { return {}; };
+    }
+  }
 
-	request.addListener('end', function () {
-        fileServer.serve(request, response);
-    });
-}
-
-// Delete this row if you want to see debug messages
-io.set('log level', 1);
-
-// Listen for incoming connections from clients
-io.sockets.on('connection', function (socket) {
-
-	// Start listening for mouse move events
-	socket.on('mousemove', function (data) {
-		
-		// This line sends the event (broadcasts it)
-		// to everyone except the originating client.
-		socket.broadcast.emit('moving', data);
-	});
-});
+  // Start server
+  sails.lift(rc('sails'));
+})();

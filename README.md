@@ -4,22 +4,23 @@ Software Engineering 2015
 Homepage for deploy: https://cloudpainting.herokuapp.com/
 
 ==================================================================================
-*Tóm tắt buổi họp ngày 02/10/2015: 
-Cách sử dụng sails js:
+#Tóm tắt buổi họp ngày 02/10/2015: 
+*Cách sử dụng sails js:
 - Pull source code, nhánh dev;
 - Vào cmd thư mục của project vừa tạo, gõ npm install một lần duy nhất để máy tải dependencies.
 - Để deploy localhost:1337/ , ta gõ lệnh sails lift( cũng ở trong thư mục project)
 
+*Chia team: 
 
-Phần UI-Client:
+*Phần UI-Client: Trung và Hoàng
 - Làm Homepage:	làm nút bấm
 - Làm màn hình vẽ: 	khung, Tên ở bên trên, làm menu
 
-Phần Controller-Client:
+*Phần Controller-Client: Phúc, Giang
 - Xử lý nét vẽ của người dùng
 - Nhận thông tin server, và vẽ lại
 
-Phần Controller-Server:
+*Phần Controller-Server: Thức, Giang
 - Quản lý phòng
 - Truyền tin trong khi vẽ như thế nào
 - Xử lý người dùng vào sau

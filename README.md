@@ -14,9 +14,11 @@ Cách sử dụng sails js:
 Phần UI-Client:
 - Làm Homepage:	làm nút bấm
 - Làm màn hình vẽ: 	khung, Tên ở bên trên, làm menu
+
 Phần Controller-Client:
 - Xử lý nét vẽ của người dùng
 - Nhận thông tin server, và vẽ lại
+
 Phần Controller-Server:
 - Quản lý phòng
 - Truyền tin trong khi vẽ như thế nào

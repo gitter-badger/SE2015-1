@@ -27,8 +27,6 @@ Homepage for deploy: https://cloudpainting.herokuapp.com/
 
 ===================================================================================
 
-
-==================================================================================
 *Tóm tắt buổi họp ngày 25/9/2015: 
 - Tất cả pull source code này về, checkout branch dev
 - Prototype mở đầu, credit by Giang: http://imgur.com/a/nLE4D

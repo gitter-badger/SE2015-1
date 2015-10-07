@@ -853,7 +853,9 @@ ul.social-buttons li a:active {
     text-shadow: none;
     background: #fed136;
 }
-
+input, select, textarea{
+    color: #000000;
+}
 img::selection {
     background: 0 0;
 }

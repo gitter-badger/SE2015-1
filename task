@@ -1,0 +1,35 @@
+Phân task 
+	-Hoàng: file index.html
+			yêu cầu {
+					có start drawing, input id, join button
+					start : draw/randomid
+					joint : draw/id
+			} 
+		
+	- Trung : file paint.ejs
+			yêu cầu { 
+					có 3 radio button chọn cỡ brush + 2 radio button chọn màu ( đen + trắng )
+					// kèm id
+					có 1 canvas cỡ 800x600 với id là "drawboard"
+			}	
+	
+	
+	- Phúc, Giang bảo kê : file "client_control.js"
+		yêu cầu  {
+			nhận tọa độ vẽ và vẽ vào canvas
+			giao tiếp vs server (hello world)
+			gửi tạo phòng, gửi vào phòng
+		}
+	- Thức : server
+		yêu cầu {
+			giao tiếp vs client (hello)
+			tạo phòng, vào phòng
+		}
+
+	
+	Thứ 6 : 	
+			30' đầu : giang giới thiệu sử dụng git hub
+			Hoàng + Trung : làm giao diện
+			Phúc + Thức : thử giao tiếp(helli world)
+
+
